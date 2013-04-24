@@ -1,0 +1,35 @@
+!!!
+html
+  head
+    title Grad App Talk
+    meta(charset='utf-8')
+    meta(name='author', content='Scott Cheng')
+    meta(name='description', content='Talk on (Computer Science) Graduate School Application')
+    link(href='style.css', rel='stylesheet')
+    link(href='lib/pdf.css', rel='stylesheet', media='print')
+    link(rel='canonical', href='http://scottcheng.github.io/grad-app-talk/')
+  body
+    .reveal
+      .slides
+
+        section#end
+          h1 Thank You
+          h2 Questions?
+
+    script(src='lib/head.min.js')
+    script(src='lib/reveal.min.js')
+    script
+      Reveal.initialize({
+        history: true
+      });
+    script(src='lib/d3.v3.min.js')
+    script
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
