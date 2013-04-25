@@ -12,6 +12,139 @@ html
     .reveal
       .slides
 
+        section#title
+          h1 Applying to (CS) Graduate School
+          h3 A 30,000-Foot View
+          p
+            a(href='http://scottcheng.com/', target='_blank') 程烨 / Scott Cheng
+          p
+            a(href='http://eecs.pku.edu.cn/', target='_blank') PKU CS
+            |  ➞ 
+            a(href='http://cs.stanford.edu/', target='_blank') Stanford MSCS
+
+        section#crossroad
+          p Welcome to the crossroad of your life.
+            //- Graduate application is all about making choices.
+            //- When your decision is made, everything else comes naturally.
+          p
+            | Ask yourself: 
+            i which way would you go?
+
+        section#know-what-you-want
+          h2 What Do You Want?
+            //- This "theme" goes through the entire application process.
+            //- You don't have to figure out everything at the beginning,
+            //- but somewhere down the journey, you'll have to be very clear.
+          ul
+            li Why study abroad?
+              //- Why study in the US
+            li Why study in a particular field?
+              //- Why computer science
+            li Why school? Why program?
+              //- Why Stanford? Why MSCS?
+            li How does the program fit into the bigger picture of your life?
+          p If you don't have a clue, think twice about applying.
+
+        //- section#ms-vs-phd
+          h2 MS or PhD
+          ul
+            li
+              | Do you 
+              i love
+              |  doing research?
+            li Do you want a career as a researcher?
+
+        section#program-selection
+          h2 Choosing Your Program
+          ul
+            li What the program has to offer
+              //- Tracks, courses, capstone projects, thesis
+              //- Pure CS or multidisciplinary
+            li Prestige of program
+              //- Ranking, reputation
+            li Location
+              //- Weather, downtown or uptown
+            li Culture
+              //- Startup culture in Stanford and SF Bay Area
+            li External resources
+              //- d.school, GSB, silicon valley
+              //- Beyond the program
+
+        section#program-researching
+          h2 Research the Programs
+          ul
+            li Read (peruse) the program website
+            li Talk to students and professors there
+          blockquote Know the program, and know your reasons for choosing it.
+
+        section#my-criteria
+          h2 My Program-Hunting Criteria
+          ul
+            li Master's program
+            li Focused on CS and HCI
+            li Strong CS dept, strong HCI lab
+            li Location &amp; culture
+              //- Hacker culture: Bay Area, Boston, Austin, Seattle, ...
+
+        section#where-i-applied
+          h2 Where I applied
+          ul
+            li Stanford MSCS, UCSD MSCS, UMD MSCS, GaTech MSCS, UCI MSICS
+              //- Mater in CS with HCI specialization
+            li CMU MHCI, GaTech MSHCI
+              //- HCI program under CS school
+            li UCLA MSCS, UT Austin MSCS, USC MSCS, NYU MSCS, CMU MSIT-VLIS
+              //- Other CS programs, for location, prestige, etc
+
+        section#where-i-did-not-apply
+          h2 Where I did NOT apply
+          ul
+            li MIT MSCS, UCB MSCS
+              //- Research-oriented
+            li UWash HCDE, NYU ITP
+              //- Pure HCI programs
+
+        section#package
+          h2 Application Packet
+            //- After setting your targets, go to their websites and find out what they require from you.
+          p
+            | Convince the admission committee that you are 
+            b qualified
+            |  and 
+            b motivated
+            |  to succeed in your proposed program.
+            //- What student does the program look for? convince them that you are that student.
+          ul
+            li Transcript
+            li Standardized Tests (GRE, TOEFL)
+            li: i Letter of Recommendation
+            li: i Statement of Purpose
+            li Resume / CV
+
+        section#sop
+          h2 Statement of Purpose
+          blockquote
+            p The Statement of Purpose required by grad schools is probably the hardest thing you will ever write.
+            .author: a(href='http://www.uni.edu/~gotera/gradapp/stmtpurpose.htm', target='_blank') Vince Gotera
+
+        section#sop-how
+          h2 How to write your SoP?
+          ul
+            li Before you start, read what others say about it.
+            li When you are happy with your draft, ask people to read it.
+              ul
+                li (Successful) former applicants
+                li (Trusted) professionals who help people apply
+            li Collect the feedback. Revise. Rewrite.
+
+        section#resources
+          h2 Resources
+          ul
+            li EndlessOffering Google Group &amp; Google Drive
+            li: a(href='http://www.1point3acres.com/bbs/') 一亩三分地 (good starting point)
+            li(style='font-size:.9em'): a(href='http://nlp.stanford.edu/~rkarthik/DAGAP.pdf', target='_blank') Demystifying the American Graduate Admissions Process
+            li Google
+
         section#end
           h1 Thank You
           h2 Questions?
@@ -24,12 +157,10 @@ html
       });
     script(src='lib/d3.v3.min.js')
     script
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-      _gaq.push(['_trackPageview']);
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      ga('create', 'UA-33401065-5', 'github.io');
+      ga('send', 'pageview');
